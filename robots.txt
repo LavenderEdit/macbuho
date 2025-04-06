@@ -14,7 +14,12 @@ User-agent: AdsBot-Google-Mobile
 Disallow:
 
 User-agent: *
-Disallow: 
 Disallow: /cgi-bin/
 Disallow: /nodeJS/
 Disallow: /json/
+Disallow: /security/
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /*.php$
+Disallow: /*.env$
