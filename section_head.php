@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Macbuho</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=2">
 
 </head>
 
@@ -40,8 +40,8 @@
         <ul class="nav-links">
             <li class="nav-item"><a href="index.php">Mac</a></li>
             <li class="nav-item"><a href="ipad.php">iPad</a></li>
-            <!-- <li class="nav-item"><a href="apple_watch.php">Apple Watch</a></li> -->
-            <li class="nav-item"><a href=""></a></li>
+            <li class="nav-item"><a href="iphone.php">iPhone</a></li>
+            <li class="nav-item"><a href="apple_watch.php">Apple Watch</a></li>
 
             <!-- <li class="nav-item"><a href="apple_watch.php">En stock</a></li> -->
             <!-- <li class="nav-item"><a href="apple_watch.php">De segunda</a></li> -->
