@@ -42,7 +42,7 @@ $total = count($data["tiles"]);
                 $ram = $data["tiles"][$i]["filters"]["dimensions"]["tsMemorySize"] ?? 'N/A';
                 $modelo = $data["tiles"][$i]["filters"]["dimensions"]["refurbClearModel"] ?? 'Otro';
 
-                echo "<div class='product $modelo'>";
+                echo "<div class='product $modelo' data-title=\"$titulo\">";
                 echo "<img src='$image'><br><br>";
                 echo "$titulo<br>";
                 echo "<span>$ram</span> <span>$disco</span> <span>$anio</span> <br><br>";
