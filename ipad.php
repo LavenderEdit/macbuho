@@ -38,7 +38,7 @@ $capacidades = $data['dictionaries']['dimensions']['dimensionCapacity'] ?? [];
             $color = $colores[$colorKey]['text'] ?? 'Color desconocido';
             $capacidad = $capacidades[$capacidadKey]['text'] ?? 'Capacidad desconocida';
 
-            echo "<div class='product-card $modelKey'>";
+            echo "<div class='product-card $modelKey' data-product=\"" . htmlspecialchars($titulo) . "\">";
             echo "  <div class='product-image'>";
             echo "    <img src='$image' alt='$titulo'>";
             echo "  </div>";
