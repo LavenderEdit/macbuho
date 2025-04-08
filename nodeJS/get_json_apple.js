@@ -42,8 +42,39 @@ async function scrapData() {
     }
   );
 
+  await page.goto("https://www.apple.com/shop/refurbished/iphone");
+  await new Promise((resolve) => setTimeout(resolve, 5000));
+
+  const iphoneData = await page.evaluate(() =>
+    JSON.stringify(window.REFURB_GRID_BOOTSTRAP)
+  );
+  fs.writeFile(
+    "C:/xampp/htdocs/macbuho/json/iphone.json",
+    iphoneData,
+    function (err) {
+      if (err) return console.log(err);
+      console.log("Datos de iPhone extraídos correctamente.");
+    }
+  );
+
+  await page.goto("https://www.apple.com/shop/refurbished/watch");
+  await new Promise((resolve) => setTimeout(resolve, 5000));
+
+  const watchData = await page.evaluate(() =>
+    JSON.stringify(window.REFURB_GRID_BOOTSTRAP)
+  );
+  fs.writeFile(
+    "C:/xampp/htdocs/macbuho/json/applewatch.json",
+    watchData,
+    function (err) {
+      if (err) return console.log(err);
+      console.log("Datos de Apple Watch extraídos correctamente.");
+    }
+  );
+
   await browser.close();
 }
 
-setInterval(scrapData, 15 * 60 * 1000); // 15 minutos
-// setInterval(scrapData, 3 * 60 * 60 * 1000);
+scrapData();
+// setInterval(scrapData, 15 * 60 * 1000); // 15 minutos
+// setInterval(scrapData, 3 * 60 * 60 * 1000); // 3 horas
