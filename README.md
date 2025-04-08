@@ -7,14 +7,19 @@ Este proyecto realiza un scraping de prueba del sitio [Apple](https://www.apple.
 ```
 MACBUHO/
 ├── css/
-│   └── style.css
+│   ├── style.css
+│   └── style-modal.css
 ├── fonts/
 │   └── SF-Pro-Display-Regular.woff
 ├── images/
 ├── js/
 │   ├── mobile.js
+│   ├── script-functions.js
+│   ├── script-registry.js
 │   └── script.js
 ├── json/
+│   ├── applewatch.json
+│   ├── iphone.json
 │   ├── ipad.json
 │   └── mac.json
 ├── json_test/
@@ -27,6 +32,9 @@ MACBUHO/
 ├── .gitignore
 ├── index.php
 ├── ipad.php
+├── iphone.php
+├── apple_watch.php
+├── README.md
 ├── robots.txt
 ├── section_footer.php
 └── section_head.php
@@ -35,7 +43,7 @@ MACBUHO/
 ## 🚀 Funcionalidad
 
 - **Scraping con Puppeteer**: `get_json_apple.js` navega en segundo plano hacia el sitio de Apple y extrae nombres y precios de dispositivos Apple.
-- **Exportación de datos**: Los resultados se guardan como archivos `.json` separados (por ejemplo: `ipad.json`, `mac.json`) dentro del directorio `/json`.
+- **Exportación de datos**: Los resultados se guardan como archivos `.json` separados (por ejemplo: `ipad.json`, `mac.json`, `iphone.json`, `applewatch.json`) dentro del directorio `/json`.
 - **PHP Frontend**: Los archivos `.php` permiten mostrar o manipular esos datos posiblemente en una interfaz web.
 - **Tipo de cambio**: El script `tipo_de_cambio.js` podría estar relacionado con la conversión de precios a otra moneda.
 
