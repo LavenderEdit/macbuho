@@ -1,3 +1,26 @@
+<div class="custom-modal" id="whatsappModal">
+    <div class="custom-modal-dialog">
+        <div class="custom-modal-content">
+            <div class="custom-modal-header">
+                <h5 class="custom-modal-title" id="whatsappModalLabel">¿Quieres preguntar más sobre este producto?</h5>
+                <button type="button" class="custom-close-btn" aria-label="Cerrar" onclick="closeModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="custom-modal-body">
+                <p id="productMessage">Producto seleccionado: <strong></strong></p>
+            </div>
+            <div class="custom-modal-footer">
+                <a href="#" class="custom-whatsapp-btn" id="whatsappLink" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Preguntar por WhatsApp
+                </a>
+                <button type="button" class="custom-btn-secondary" onclick="closeModal()">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <footer>
     <ul class="footer_top">
         <li>
@@ -79,7 +102,10 @@
     </div>
 </footer>
 
-<script type="text/javascript" src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+<script type="module" src="js/script.js?v=7"></script>
 <script type="text/javascript" src="js/mobile.js"></script>
 </body>
 
